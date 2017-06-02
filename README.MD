@@ -2,7 +2,7 @@
 
 A simple tool I built for listening to curated collection of startup essays. Use's OSX's default text-to-speech tool.
 
-**IMPORTANT**: Works on OSX only. I do plan to support platforms too.
+**IMPORTANT**: Works on OSX only. I've plans to support platforms in the future.
 
 ![screenshot](ss.png)
 
