@@ -1,5 +1,7 @@
 paul_graham:
-  - title: Charisma / Power
+  - fullName: Paul Graham
+
+  - title: charisma / power
     link: http://www.paulgraham.com/pow.html
     file: pow.txt
 

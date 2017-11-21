@@ -1,4 +1,3 @@
-
 (This essay is derived from a talk at the Berkeley CSUA.)
 
 The three big powers on the Internet now are Yahoo, Google, and Microsoft.

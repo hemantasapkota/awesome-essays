@@ -1,4 +1,3 @@
-
 (This essay was originally published in Hackers & Painters.)
 
 If you wanted to get rich, how would you do it? I think your best bet would be

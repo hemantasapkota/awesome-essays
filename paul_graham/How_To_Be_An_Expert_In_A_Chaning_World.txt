@@ -1,4 +1,3 @@
-
 December 2014
 
 If the world were static, we could have monotonically increasing confidence in
