@@ -1,23 +1,30 @@
-# awesome-startup-essays
+# awesome-essays
 
-A simple tool I built for listening to curated collection of startup essays. Use's OSX's default text-to-speech tool.
+A simple CLI tool for listening to curated collection of essays. 
 
-**IMPORTANT**: Works on OSX only. I've plans to support platforms in the future.
+**IMPORTANT**: Works on OSX only. Other platforms will be supported in the future.
 
 ![screenshot](ss.png)
 
 # Install
 
 ```
-git clone https://github.com/hemantasapkota/awesome-startup-essays
-go build .
+go get -u github.com/hemantasapkota/awesome-essays
 ```
 
 # Usage
 
+## Listen to a title
+
 ```
-./awesome-startup-essays -fie paul_graham/airbnb.txt
+awesome-essays -author paul_graham -title "How To Raise Money"
 ```
+
+## List the titles by the author
+```
+awesome-essays -author paul_graham | less
+```
+
 # Controls
 ```
 q: Quit
@@ -25,3 +32,5 @@ p: Pause
 r: Resume
 o: Open link to the essay
 ```
+
+# Contributing  ( TODO )

@@ -93,7 +93,7 @@ func NewHeader(title string) *Header {
 		fmt.Sprintf("Reading: [%s](fg-white) by [%s](fg-white)", title, authorDetail["fullName"].(string)),
 	}
 	ls.ItemFgColor = termui.ColorYellow
-	ls.BorderLabel = "Welcome to Awesome Startup Essays!!"
+	ls.BorderLabel = "Welcome to Awesome Essays!!"
 	ls.Height = 4
 	ls.Width = 50
 	ls.Y = 0
