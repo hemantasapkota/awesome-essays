@@ -16,7 +16,8 @@ import (
 )
 
 const (
-	navMenuHeight = 5
+	navMenuHeight     = 5
+	errAuthorNotFound = "Author not found. If you'd like to add the essays by this author, please raise an issue at: https://github.com/hemantasapkota/awesome-essays"
 )
 
 var (
@@ -155,12 +156,13 @@ func (b *Body) Update(next *int, emptyLines int, essay *Essay) {
 func parseAuthorModel(author string) (map[interface{}]interface{}, []interface{}) {
 	data, err := Asset(fmt.Sprintf("%s/index.yaml", author))
 	if err != nil {
-		panic(err)
+		fmt.Printf(errAuthorNotFound)
+		return nil, nil
 	}
 	var authors map[string]interface{}
 	err = yaml.Unmarshal(data, &authors)
 	if err != nil {
-		fmt.Printf("Author not found.\n")
+		fmt.Printf(errAuthorNotFound)
 		return nil, nil
 	}
 	list := authors[author].([]interface{})
