@@ -1,6 +1,6 @@
 # awesome-essays
 
-A simple CLI tool for listening to curated collection of essays. 
+A simple CLI tool for listening to curated collection of essays.
 
 **IMPORTANT**: Works on OSX only. Other platforms will be supported in the future.
 
@@ -37,6 +37,16 @@ p: Pause
 r: Resume
 o: Open link to the essay
 ```
+
+# Contributing
+
+We'd love for you to contribute to the project. If you'd like to add new essays to the collection, please follow these guidelines:
+
+1. Start with a template ( cool_author )
+2. Format text to have 80 columns - ```fmt -w 80 file.txt```
+3. Link up the essay in index.yaml
+4. Recreate bin data. ```go-bindata <author1> <author2> ... <authorX>```
+5. Submit a pull a request.
 
 # License
 

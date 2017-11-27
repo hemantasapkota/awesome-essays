@@ -1,0 +1,7 @@
+cool_author:
+  - fullName: Cool Author
+
+  - title: "42"
+    link: https://en.wikipedia.org/wiki/42_(number)#The_Hitchhiker's_Guide_to_the_Galaxy
+    file: 42.txt
+
