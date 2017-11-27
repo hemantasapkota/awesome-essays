@@ -90,7 +90,7 @@ type Header struct {
 func NewHeader(title string) *Header {
 	ls := termui.NewList()
 	ls.Items = []string{
-		"Menu: q quit. :p pause :r resume. o: open link.",
+		"Menu: q quit. :p pause :r resume. o: open link. d: donate",
 		fmt.Sprintf("Reading: [%s](fg-white) by [%s](fg-white)", title, authorDetail["fullName"].(string)),
 	}
 	ls.ItemFgColor = termui.ColorYellow
@@ -293,6 +293,10 @@ func main() {
 			cmd := exec.Command("open", link)
 			cmd.Start()
 		}
+	})
+	termui.Handle("/sys/kbd/d", func(event termui.Event) {
+		cmd := exec.Command("open", "https://donorbox.org/awesome-essays")
+		cmd.Start()
 	})
 	termui.Handle("/sys/kbd/q", func(event termui.Event) {
 		essay.Stop()
