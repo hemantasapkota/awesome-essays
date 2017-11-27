@@ -14,18 +14,18 @@ go get -u github.com/hemantasapkota/awesome-essays
 
 # Usage
 
+## List the titles by the author
+```
+awesome-essays -author paul_graham | less
+```
+
 ## Listen to a title
 
 ```
 awesome-essays -author paul_graham -title "How To Raise Money"
 ```
 
-## List the titles by the author
-```
-awesome-essays -author paul_graham | less
-```
-
-## Specify index
+## Listen to title by specifying index
 ```
 awesome-essays -author paul_graham -index 150
 ```
@@ -36,6 +36,7 @@ q: Quit
 p: Pause
 r: Resume
 o: Open link to the essay
+d: Donate to the maintainer
 ```
 
 # Contributing
