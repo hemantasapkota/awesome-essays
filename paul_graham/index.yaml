@@ -1,6 +1,10 @@
 paul_graham:
   - fullName: Paul Graham
 
+  - title: General and Surprising
+    link: http://www.paulgraham.com/sun.html
+    file: sun.txt
+
   - title: charisma / power
     link: http://www.paulgraham.com/pow.html
     file: pow.txt
