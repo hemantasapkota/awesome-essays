@@ -11,7 +11,9 @@ import (
 
 	"github.com/wsxiaoys/terminal/color"
 
-	"github.com/gizak/termui"
+	// "github.com/gizak/termui"
+        "github.com/airking05/termui"
+
 	yaml "gopkg.in/yaml.v2"
 )
 
